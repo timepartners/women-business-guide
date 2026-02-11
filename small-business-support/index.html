@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#2563EB">
+    <meta property="og:title" content="🎁 소상공인 경영안정 바우처 25만원 정확 가이드">
+    <meta property="og:description" content="카드 포인트 지원, 사용처 제한 있음 - 2026년 정확한 팩트 기반 가이드">
+    <meta property="og:type" content="website">
+    <meta name="description" content="소상공인 경영안정 바우처 25만원 팩트 기반 완벽 가이드">
+    <title>소상공인 경영안정 바우처 25만원 가이드</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2563EB 0%, #1d4ed8 100%);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            width: 100%;
+        }
+        
+        header h1 {
+            font-size: clamp(1.8em, 5vw, 2.8em);
+            margin-bottom: 10px;
+            font-weight: 700;
+            word-break: keep-all;
+        }
+        
+        header p {
+            font-size: clamp(0.9em, 3vw, 1.1em);
+            opacity: 0.95;
+            font-weight: 300;
+            word-break: keep-all;
+        }
+        
+        .section {
+            background: white;
+            padding: 25px 20px;
+            margin: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .section h2 {
+            color: #2563EB;
+            font-size: clamp(1.3em, 4vw, 2em);
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #2563EB;
+            font-weight: 700;
+            word-break: keep-all;
+        }
+        
+        .section h3 {
+            color: #333;
+            font-size: clamp(1.1em, 3vw, 1.4em);
+            margin-top: 20px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .content-text {
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.8;
+            font-size: 1em;
+        }
+        
+        .info-box, .warning-box, .success-box, .critical-box, .fact-box {
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 4px solid;
+            font-size: 0.95em;
+            line-height: 1.7;
+        }
+        
+        .info-box {
+            background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+            border-left-color: #2563EB;
+        }
+        
+        .warning-box {
+            background: linear-gradient(135deg, #fff3cd 0%, #fff8e7 100%);
+            border-left-color: #ffc107;
+        }
+        
+        .success-box {
+            background: linear-gradient(135deg, #d4edda 0%, #e8f5e9 100%);
+            border-left-color: #28a745;
+        }
+        
+        .critical-box {
+            background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+            border-left-color: #d32f2f;
+        }
+        
+        .fact-box {
+            background: linear-gradient(135deg, #fff5e6 0%, #fff9f0 100%);
+            border-left-color: #ff6b35;
+        }
+        
+        .expert-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 50px 20px;
+            margin: 15px;
+            border-radius: 12px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .expert-image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            aspect-ratio: 3/4;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        }
+        
+        .expert-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        .expert-content {
+            padding: 20px 0;
+        }
+        
+        .expert-content h2 {
+            font-size: clamp(1.3em, 4vw, 1.8em);
+            color: #2563EB;
+            margin-bottom: 30px;
+            font-weight: 700;
+            word-break: keep-all;
+            line-height: 1.4;
+        }
+        
+        .expert-info {
+            margin: 25px 0;
+            padding: 20px;
+            background: rgba(37, 99, 235, 0.1);
+            border-left: 4px solid #2563EB;
+            border-radius: 8px;
+        }
+        
+        .expert-info-title {
+            color: #2563EB;
+            font-weight: 700;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        
+        .expert-info-text {
+            color: #ddd;
+            font-size: 0.95em;
+            line-height: 1.8;
+            word-break: keep-all;
+        }
+        
+        .skills {
+            margin-top: 25px;
+        }
+        
+        .skills h4 {
+            color: #2563EB;
+            font-size: 1em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .skill-item {
+            color: #ccc;
+            font-size: 0.95em;
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.6;
+        }
+        
+        .skill-item:before {
+            content: "●";
+            position: absolute;
+            left: 0;
+            color: #2563EB;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9em;
+        }
+        
+        table th {
+            background: linear-gradient(135deg, #2563EB 0%, #1d4ed8 100%);
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        table td {
+            border: 1px solid #e0e0e0;
+            padding: 10px 12px;
+            background: #fafafa;
+        }
+        
+        table tr:nth-child(even) td {
+            background: white;
+        }
+        
+        .checklist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .checklist li {
+            color: #555;
+            margin: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            line-height: 1.6;
+        }
+        
+        .checklist li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #2563EB;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .timeline-item {
+            padding: 20px;
+            margin: 15px 0;
+            background: #f9f9f9;
+            border-left: 4px solid #2563EB;
+            border-radius: 8px;
+        }
+        
+        .timeline-item strong {
+            color: #2563EB;
+            font-size: 1.05em;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #2563EB;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin: 0 3px;
+        }
+        
+        .badge-success {
+            background: #28a745;
+        }
+        
+        .badge-warning {
+            background: #ff6b35;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #2563EB 0%, #1d4ed8 100%);
+            color: white;
+            padding: 40px 20px;
+            margin: 15px;
+            text-align: center;
+            border-radius: 12px;
+        }
+        
+        .cta-section h2 {
+            color: white;
+            font-size: clamp(1.3em, 4vw, 2em);
+            margin-bottom: 15px;
+            border: none;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            margin-top: 25px;
+        }
+        
+        @media (min-width: 600px) {
+            .button-group {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+        
+        .btn {
+            background: white;
+            color: #2563EB;
+            border: none;
+            padding: 14px 28px;
+            font-size: 1em;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            flex: 1;
+            min-width: 150px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .help-section {
+            background: white;
+            padding: 25px 20px;
+            margin: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .help-section h2 {
+            color: #2563EB;
+            font-size: clamp(1.3em, 4vw, 2em);
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #2563EB;
+        }
+        
+        .kakao-btn {
+            width: 100%;
+            padding: 14px;
+            font-size: 1em;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            background: #FFE812;
+            color: #3a1a1a;
+            cursor: pointer;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .kakao-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 14px rgba(0,0,0,0.15);
+        }
+        
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        footer p {
+            margin: 5px 0;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 768px) {
+            .expert-section {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            header {
+                padding: 30px 20px;
+            }
+            
+            .section {
+                margin: 10px;
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💰 소상공인 경영안정 바우처</h1>
+            <p>25만원 카드 포인트 지원 정확 가이드</p>
+        </header>
+
+        <div class="expert-section">
+            <div class="expert-image">
+                <img src="expert1.jpg" alt="소상공인 지원 전문가">
+            </div>
+
+            <div class="expert-content">
+                <h2>잘못 알면<br>못 받는 25만원</h2>
+
+                <div class="expert-info">
+                    <div class="expert-info-title">📍 정부 정책 소개</div>
+                    <div class="expert-info-text">중소벤처기업부·소상공인시장진흥공단 주관 소상공인 경영안정 바우처 프로그램</div>
+                </div>
+
+                <div class="expert-info">
+                    <div class="expert-info-title">💳 지원 형태</div>
+                    <div class="expert-info-text">
+                        현금이 아닌<br>
+                        카드 포인트<br>
+                        (디지털 바우처)
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <h4>🎯 핵심 특징</h4>
+                    <div class="skill-item">현금 입금 ❌ 카드 포인트 ✅</div>
+                    <div class="skill-item">사용처 제한 있음</div>
+                    <div class="skill-item">신용조사 없음</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📌 소상공인 경영안정 바우처란?</h2>
+            <div class="content-text">
+                소상공인의 고정비 부담을 완화하기 위해 정부에서 지원하는 카드 포인트 형태의 디지털 바우처입니다. 전기·가스·수도료, 보험료 등 필수 고정비에만 사용 가능합니다.
+            </div>
+            <div class="fact-box">
+                <strong>⚠️ 중요한 팩트</strong><br>
+                현금 직접 입금이 아닙니다. 카드 포인트로 지급되어 지정된 항목에서만 자동으로 차감됩니다.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>💳 지원 내용 및 사용처</h2>
+            
+            <h3>1️⃣ 지원 금액 및 형태</h3>
+            <div class="success-box">
+                <strong>✓ 지원 금액</strong><br><br>
+                <span class="badge">2026년</span> <strong style="font-size: 1.2em; color: #28a745;">250,000원 (1회)</strong><br><br>
+                <span style="font-size: 0.9em; color: #666;">사업체당 단일 정액 지급</span><br>
+                <span style="font-size: 0.9em; color: #666;">형태: 카드 포인트 (현금 아님)</span>
+            </div>
+            
+            <h3>2️⃣ 사용 가능 항목 ✅</h3>
+            <div class="success-box">
+                <strong>✓ 반드시 이 항목에만 사용 가능:</strong><br><br>
+                ✓ 전기·가스·수도 요금<br>
+                ✓ 4대 보험료 (국민연금·건강보험·고용보험·산재보험)<br>
+                ✓ 차량 연료비<br>
+                ✓ 전통시장 화재공제료
+            </div>
+            
+            <h3>3️⃣ 사용 불가 항목 ❌</h3>
+            <div class="critical-box">
+                <strong>❌ 다음에는 절대 사용 불가:</strong><br><br>
+                ❌ 인건비<br>
+                ❌ 재료비<br>
+                ❌ 임차료 (월세·건물료)<br>
+                ❌ 통신비<br>
+                ❌ 일반 카드 결제<br>
+                ❌ 현금 출금
+            </div>
+
+            <h3>4️⃣ 사용 방식</h3>
+            <div class="info-box">
+                <strong>💡 어떻게 사용하나요?</strong><br><br>
+                ① 지원받을 카드사 선택<br>
+                ② 해당 카드사의 포인트로 충전<br>
+                ③ 가맹점(전기·가스·보험사 등)에서 자동 차감<br>
+                ④ 수동으로 사용처 변경 불가 (자동 차감만 가능)
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📋 신청 자격 조건 (정확한 기준)</h2>
+            
+            <h3>✅ 지원 대상</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>요건</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>매출액</strong></td>
+                            <td>연 1억 400만 원 미만</td>
+                        </tr>
+                        <tr>
+                            <td><strong>개업 시기</strong></td>
+                            <td>2025년 12월 31일 이전 개업</td>
+                        </tr>
+                        <tr>
+                            <td><strong>영업 상태</strong></td>
+                            <td>신청일 기준 정상 영업 중</td>
+                        </tr>
+                        <tr>
+                            <td><strong>사업자등록</strong></td>
+                            <td>유효한 사업자등록증 보유</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>❌ 지원 불가 경우</h3>
+            <div class="critical-box">
+                <strong>다음의 경우 신청 불가:</strong><br>
+                ✓ 폐업 상태<br>
+                ✓ 휴업 중<br>
+                ✓ 2026년 1월 1일 이후 개업자<br>
+                ✓ 소상공인 기본법상 요건 미충족
+            </div>
+
+            <h3>🎯 신용조사 및 심사 기준</h3>
+            <div class="warning-box">
+                <strong>⚠️ 신용등급·세금 체납 여부를 기준으로 한 심사는 없습니다.</strong><br><br>
+                다만 체납 상태에서는 일부 사용처 결제가 제한될 수 있습니다.<br>
+                예: 보험료 결제 불가
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>⚠️ 주의사항 및 제한사항</h2>
+            
+            <h3>❌ 자주 실수하는 부분</h3>
+            
+            <div class="critical-box">
+                <strong>❌ 실수 1: "현금으로 받을 수 있다"</strong><br>
+                아닙니다. 카드 포인트로만 지급되며 현금 출금 불가입니다.
+            </div>
+
+            <div class="critical-box">
+                <strong>❌ 실수 2: "청년·여성·위기 추가 지원"</strong><br>
+                없습니다. 모든 소상공인이 사업체당 25만원 1회만 받습니다. 추가 지급은 없습니다.
+            </div>
+
+            <div class="critical-box">
+                <strong>❌ 실수 3: "ols.semas.or.kr에서 신청"</strong><br>
+                틀렸습니다. 그곳은 정책자금(대출) 사이트입니다. 바우처는 별도 신청 사이트에서 신청합니다.
+            </div>
+
+            <div class="critical-box">
+                <strong>❌ 실수 4: "1년 이상 운영 필수"</strong><br>
+                아닙니다. 단지 2025년 12월 31일 이전 개업이면 됩니다. (개업일자만 중요)
+            </div>
+
+            <div class="critical-box">
+                <strong>❌ 실수 5: "세금 체납 시 불가"</strong><br>
+                신청은 가능합니다. 신용등급·세금 체납 여부를 기준으로 한 심사는 없습니다.
+            </div>
+
+            <h3>📌 기타 제한사항</h3>
+
+            <div class="warning-box">
+                <strong>⚠️ 예산 소진 시 조기 마감</strong><br>
+                정부 예산에 따라 신청 기간 중 조기 마감될 수 있습니다. 빠른 신청이 필요합니다.
+            </div>
+
+            <div class="warning-box">
+                <strong>⚠️ 세무 신고 필요</strong><br>
+                받은 바우처는 일시적 수입으로 분류되어 세무 신고 대상이 될 수 있습니다. 세무사와 상담하세요.
+            </div>
+
+            <div class="warning-box">
+                <strong>⚠️ 중복 신청 불가</strong><br>
+                동일 사업자는 중복 신청이 불가능합니다. (1회만 지급)
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📝 신청 방법 및 절차</h2>
+            <div class="timeline-item">
+                <strong>1단계: 자격 확인</strong>
+                <div class="content-text">연 1억 400만 원 미만 매출, 2025년 12월 31일 이전 개업, 정상 영업 중 확인</div>
+            </div>
+            <div class="timeline-item">
+                <strong>2단계: 신청 사이트 접속</strong>
+                <div class="content-text">소상공인24 또는 소상공인 경영안정 바우처 전용 홈페이지</div>
+            </div>
+            <div class="timeline-item">
+                <strong>3단계: 온라인 신청</strong>
+                <div class="content-text">사업자등록번호, 기본 정보 입력 (문서 제출 대부분 불필요)</div>
+            </div>
+            <div class="timeline-item">
+                <strong>4단계: 자동 검증</strong>
+                <div class="content-text">정부 시스템 자동 확인으로 대상 여부 즉시 판단</div>
+            </div>
+            <div class="timeline-item">
+                <strong>5단계: 카드사 선택</strong>
+                <div class="content-text">지원받을 카드사 선택하여 포인트 수령</div>
+            </div>
+            <div class="timeline-item">
+                <strong>6단계: 가맹점 이용</strong>
+                <div class="content-text">전기·가스·수도·보험료 등에서 자동 차감</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📞 신청 사이트 및 문의처</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>기관/사이트</th>
+                            <th>연락처/주소</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>소상공인24</strong></td>
+                            <td>https://www.sbiz24.or.kr</td>
+                        </tr>
+                        <tr>
+                            <td><strong>바우처 전용 홈페이지</strong></td>
+                            <td>소상공인 경영안정 바우처.kr</td>
+                        </tr>
+                        <tr>
+                            <td><strong>소상공인시장진흥공단</strong></td>
+                            <td><span class="badge">1533-0100</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>중소기업통합콜센터</strong></td>
+                            <td><span class="badge">1357</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>✅ 신청 전 최종 체크리스트</h2>
+            <ul class="checklist">
+                <li>2025년 12월 31일 이전에 개업했는가?</li>
+                <li>현재 정상 영업 중인가? (폐업 상태 아님)</li>
+                <li>연 매출이 1억 400만 원 미만인가?</li>
+                <li>유효한 사업자등록증을 보유하고 있는가?</li>
+                <li>현금이 아닌 카드 포인트 형태임을 이해했는가?</li>
+                <li>사용처가 제한됨(전기·가스·보험료만)을 알고 있는가?</li>
+            </ul>
+        </div>
+
+        <div class="cta-section">
+            <h2>🚀 지금 신청하세요</h2>
+            <p style="margin: 15px 0; font-size: 0.95em;">예산 소진 시 조기 마감될 수 있으니 서둘러주세요!</p>
+            <div class="button-group">
+                <button class="btn" onclick="window.open('https://www.sbiz24.or.kr', '_blank')">신청 사이트 이동</button>
+                <button class="btn" onclick="alert('소상공인시장진흥공단\n☎ 1533-0100\n\n중소기업통합콜센터\n☎ 1357')">전화 상담</button>
+            </div>
+        </div>
+
+        <div class="help-section">
+            <h2>🔔 추가 질문이 있으신가요?</h2>
+            <div class="content-text" style="color: #666; margin-bottom: 15px;">
+                소상공인 경영안정 바우처에 대한 정확한 정보는<br>
+                공식 기관에 문의하시는 것이 가장 안전합니다.<br>
+                <span style="font-size: 0.9em; color: #999;">*정책은 수시로 변경될 수 있습니다.</span>
+            </div>
+            
+            <div style="margin: 20px 0;">
+                <button class="kakao-btn" onclick="window.location.href='http://pf.kakao.com/_xdkxohX/chat'">
+                    💬 카카오톡채널 - 타임파트너스
+                </button>
+            </div>
+
+            <div style="margin: 20px 0;">
+                <button class="kakao-btn" style="background: #4CAF50;" onclick="window.location.href='tel:1866-2515'">
+                    ☎️ 전화 상담: 1866-2515
+                </button>
+            </div>
+
+            <div style="margin-top: 20px; padding: 15px; background: #eff6ff; border-radius: 8px; font-size: 0.9em; color: #666; line-height: 1.8;">
+                <strong style="color: #333;">📌 중요 안내</strong><br>
+                본 가이드는 2026년 2월 현재 정보를 바탕으로 작성되었습니다.<br>
+                정책 변경 시 내용이 달라질 수 있으니<br>
+                항상 공식 홈페이지에서 최신 정보를 확인하세요.
+            </div>
+        </div>
+
+        <footer>
+            <p><strong>© 2026 소상공인 경영안정 바우처 정확 가이드</strong></p>
+            <p style="margin-top: 8px;">팩트 기반 정보 | 최종 수정: 2026년 2월 9일</p>
+            <p style="margin-top: 12px; color: #bbb; font-size: 0.85em;">⚠️ 본 가이드는 공식 정보를 바탕으로 작성되었으며,<br>개인의 상황에 따라 달라질 수 있습니다.<br>정확한 지원 대상은 공식 기관에 문의하세요.</p>
+        </footer>
+    </div>
+</body>
+</html>
